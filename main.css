@@ -1,0 +1,143 @@
+body {
+  background-image: linear-gradient( white, gray);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('https://bestanimations.com/media/nature/1194501889ocean-sunset-gif.gif#.Yx-x9ovOIIQ.link');
+  background-position: 100% -120%;
+  background-size: cover;
+  color: #ffffff;
+  height: 400px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #9b5259;
+  text-shadow: none;
+  background-color: #997f7f;
+}
+
+.btn.btn-primary:hover {
+  color: #997f7f;
+  background-color: #9b5259;
+}
+
+.btn-secondary {
+  background-color: #E8DFE0;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+.btn.social {
+  position: relative;
+  top: 0px;
+  left:0px;
+}
+
+.btn.social:hover {
+  top: -2px;
+  left: 3px;
+}
+
+footer {
+  font-family: 'Times New Roman';
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
+
+#about {
+  padding-top: 20px;
+  text-align: center;
+  font-family: serif, 'Dedot';
+  font-style: bold;
+}
+
+#about-txt {
+  padding-top: 50px;
+  text-size-adjust: 30px;
+  font-family: serif, 'Dedot';
+  text-align: center;
+}
+
+#profile {
+  border-radius: 50%;
+  filter: grayscale(25%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+}
+
+#profile:hover {
+  filter:opacity(75%);
+  border: 10px;
+  border-color: black;
+}
+
