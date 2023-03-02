@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient( white, gray);
+  background-image: linear-gradient( #6D6D6D, #EDAF3C);
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
@@ -33,7 +33,7 @@ header p {
   display: flex;
   align-items: center;
   background-image: url('https://bestanimations.com/media/nature/1194501889ocean-sunset-gif.gif#.Yx-x9ovOIIQ.link');
-  background-position: 100% -120%;
+  background-position: 100% -180%;
   background-size: cover;
   color: #ffffff;
   height: 500px;
@@ -112,7 +112,6 @@ footer li img {
 }
 
 #about {
-  padding-top: 20px;
   text-align: center;
   font-family: serif, 'Dedot';
   font-style: bold;
@@ -120,18 +119,23 @@ footer li img {
 
 #about-txt {
   padding-top: 50px;
+  padding-bottom: -20px;
   text-size-adjust: 30px;
   font-family: serif, 'Dedot';
   text-align: center;
 }
 
+#travels {
+  text-align: center;
+}
+
 #profile {
-  border-radius: 50%;
+  border-radius: 20%;
   filter: grayscale(25%);
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
+  width: 180px;
   height: 200px;
 }
 
@@ -140,4 +144,3 @@ footer li img {
   border: 10px;
   border-color: black;
 }
-

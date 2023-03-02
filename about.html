@@ -7,14 +7,15 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
+
 <body>
   <header id='top-pg' class='container'>
     <div class='row'>
-      <h1 class='col-sm-4'>Seamus OMalley</h1>
+      <h1 class='col-sm-4'><a href = "main.html" role="button">Seamus O'Malley</a></h1>
         <nav class='col-sm-8 text-right'>
           <p>About</p>
-          <p>Personal Work</p>
-          <p>School Work</p>
+          <p><a href = "work.html" role="button">Personal Work</a></p>
+          <p><a href = "school.html" role="button">School Work</a></p>
         </nav>
     </div>
   </header>
@@ -23,17 +24,44 @@
       <div class='row text-center'>
         <h2>Aspiring Software Engineer @ CalPoly SLO</h2>
         <h3>Undergraduate Student</h3>
-        <a class='btn btn-primary' href='#' role='button'>Explore</a>
+        <a class='btn btn-primary' href='work.html' role='button'>My Work</a>
       </div>
-      <!-- <div style="width:100%;height:0;padding-bottom:100%;position:relative;">
-        <iframe src="https://giphy.com/embed/eJoZAwRN9OI5QjthIE" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen>
-        </iframe>
-      </div> -->
     </div>
   </section>
 
   <section class="container">
     <div class="row">
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <h1 id = 'about'>My Travels</h1>
+      <p id = 'travels'> I am super passionate about travelling and seeing the world. Check out world map to explore some of my adventures!</p>
+      <object id = "worldMap" type="image/svg+xml" data="world.svg" >
+      </object>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <img id='profile' src='sources/IMG_4635.jpeg'>
+      <h1 id = 'about'>About Me</h1>
+      <p id = 'about-txt'>My name is Seamus Quinn O’Malley, and I am a Computer Science Student from Cal Poly (SLO). <br><br>
+        First and foremost, I am a learner. No matter what the situation, my ability to learn and solve problems
+        presented to me is what I believe makes me stand out. When given a task, I solve it. I go above and beyond
+        and create results that exceed expectations and when given a chance at work, I quickly prove this. <br> <br>
+        My experience in Computer Science spans throughout the field, and I am ready to take it to the next level
+        with real work experience. My experience comes in the form of projects, some of which includes my work
+        on a fully functional game built in java, multiple algorithmic based projects in python, and web
+        development. I have a very strong foundational knowledge of key topics such as data structures,
+        object-oriented programing, and object-c/assembly. I feel the most comfortable with Java and Python,
+        but because of my fundamental knowledge of computer science, I believe that I can work in any development
+        language, given a small amount of time to get used to syntax. <br><br>
+        On top of that, by the end of this year, I plan on taking classes on system programming,
+        discrete structures, and data science. I am passionate and motivated to become the best
+        software engineer I can, and all I need is an opportunity to prove my talents. I am the
+        team member to work towards exceptionalism, not just someone who is fine with the statis quo.
     </div>
   </section>
 
@@ -60,5 +88,7 @@
   crossorigin="anonymous" referrerpolicy="no-referrer">
   </script>
   <script src='./app.js'></script>
+  <script src='./world.js'></script>
+
 </body>
 </html>
