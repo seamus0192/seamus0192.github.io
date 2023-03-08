@@ -3,6 +3,7 @@
 <head>
   <title>Seamus</title>
   <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
@@ -11,30 +12,76 @@
 <body>
   <header id='top-pg' class='container'>
     <div class='row'>
-      <h1 class='col-sm-4'><a href = "main.html" role="button">Seamus O'Malley</a></h1>
-        <nav class='col-sm-8 text-right'>
-          <p><a href = "about.html" role="button">About Me</a></p>
-          <p>Personal Work</p>
-          <p><a href = "school.html" role="button">School Work</a></p>
+      <h1 id = "top-page" class='col-sm-4'>Seamus OMalley</h1>
+        <nav  class='col-sm-8 text-right'>
+          <p>Personal Projects</p>
+          <p><a id = "return" href = "school.html" role="button">Course Work</a></p>
+          <p><a id = "return" href = "about.html" role="button">About Me</p>
+          <p><a id = "return" href = "contact.html" role="button">Contact Info</p>
         </nav>
     </div>
   </header>
+
+
+
   <section class='jumbotron'>
     <div class='container'>
       <div class='row text-center'>
         <h2>Aspiring Software Engineer @ CalPoly SLO</h2>
         <h3>Undergraduate Student</h3>
-        <a class='btn btn-primary' href='#' role='button'>Explore</a>
+        <a class='btn btn-primary' href='contact.html' role='button'>Contact Me!</a>
       </div>
-      <!-- <div style="width:100%;height:0;padding-bottom:100%;position:relative;">
-        <iframe src="https://giphy.com/embed/eJoZAwRN9OI5QjthIE" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen>
-        </iframe>
-      </div> -->
     </div>
   </section>
 
+  <div id = "proj" class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="sources/discordbot.png" style="max-width: 100%;" alt="Your Image" class = "proj-image">
+      </div>
+      <div class="col-md-6">
+        <h2 class = "proj-title" id="proj-text">Discord Housing Bot Project</h2>
+        <a href="https://github.com/seamus0192/housing-bot" class="github-btn"><i class="fab fa-github"></i>
+          <span class="btn-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+            </svg>
+          </span>
+          <span class="btn-text">View Code on GitHub</span>
+        </a>
+        <p id = "proj-text">As the sun slowly rose over the horizon, the city began to stir. People emerged from their homes and started their day, the streets filling with the sounds of cars and chatter. The air was crisp and cool, but promised to warm up as the day progressed.
+
+          In the park, joggers ran along the winding paths while others walked their dogs. A group of friends gathered around a picnic table, laughing and sharing stories over a breakfast spread. Nearby, children played on the swings and slides, their laughter ringing out into the fresh morning air.
+          
+          At the heart of the city, workers bustled in and out of skyscrapers, their suits and briefcases a blur of movement. Cafes and restaurants started to open their doors, the aroma of coffee and fresh pastries wafting out onto the street.
+          
+          It was a new day, full of possibilities and opportunities. The city was alive and thriving, and everyone in it had a role to play.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id = "proj" class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class = "proj-title" id="proj-text">Object Oriented 2D Maze Game</h2>
+        <a href="https://github.com/yourusername" class="github-btn"><i class="fab fa-github"></i>
+          <span class="btn-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+            </svg>
+          </span>
+          <span class="btn-text">View Code on GitHub</span>
+        </a>
+        <p id = "proj-text">Description</p>
+      </div>
+      <div class="col-md-6">
+        <img src="sources/oop-game.png" style="max-width: 100%;" alt="Your Image" class = "proj-image">
+      </div>
+    </div>
+  </div>
 
   <footer class='container'>
+    <div class="separator"></div>
     <div class='row'>
       <p class='col-sm-4'>Created by Seamus O'Malley</p>
       <ul class='col-sm-8'>

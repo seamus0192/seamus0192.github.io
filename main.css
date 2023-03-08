@@ -52,6 +52,7 @@ header p {
   color: #fff;
 }
 
+
 section .row img {
   margin: 0 0 30px;
   width: 100%;
@@ -62,22 +63,17 @@ section .row img {
 }
 
 .btn.btn-primary {
-  border-radius: 2px;
-  border: 0px;
-  color: #9b5259;
-  text-shadow: none;
-  background-color: #997f7f;
+  font-weight: bold;
+  font-size: large;
+  color: #fff;
+  text-shadow: currentColor;
+  background-color: transparent;
+  border-color: currentColor;
 }
 
 .btn.btn-primary:hover {
-  color: #997f7f;
-  background-color: #9b5259;
-}
-
-.btn-secondary {
-  background-color: #E8DFE0;
-  color: #ffffff;
-  margin: 0 0 30px;
+  color: #888;
+  box-shadow: #666;
 }
 
 .btn.social {
@@ -139,8 +135,99 @@ footer li img {
   height: 200px;
 }
 
+
 #profile:hover {
   filter:opacity(75%);
   border: 10px;
   border-color: black;
+}
+
+#main-title {
+  font-size: 2rem; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+  color: rgb(255, 255, 255); /* Change the text color */
+  margin: 0; /* Remove any default margin */
+}
+
+#return {
+  text-decoration: none; /* Remove the underline */
+  color: #333; /* Change the link color */
+  transition: color 0.3s ease; /* Add a smooth color transition */
+}
+
+#return:hover {
+  color: rgb(167, 167, 167); /* Change the link color on hover */
+}
+
+#proj {
+  margin-top: 100px;
+}
+
+#proj-text {
+  font-family: 'Times New Roman';
+}
+
+
+.proj-image {
+  border: 3px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 75%;
+  transform: translateY(35px);
+}
+
+.proj-image:hover {
+  transform: scale(1.2) translateY(20px);
+  transition: transform 2.5s ease;
+}
+
+.github-btn {
+  font-family: Times New Roman;
+  font-size: 16px;
+  font-weight: 400;
+  font-weight: bold;
+  color: #fff;
+  background-color: #222;
+  padding: 7px 12px;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  width: 225px;
+  transform: translate(0px, -7px)
+}
+
+.github-btn:hover .btn-icon svg {
+  transition: all 1.5s ease-in-out;
+  fill: black;
+}
+
+.github-btn:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+.btn-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  transform: translate(0px, -3px)
+}
+
+.separator {
+  height: 1px;
+  background-color: #000;
+  margin: 20px 0;
+}
+
+.course-box {
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  color: #000000;
+}
+
+.course-box:hover {
+  text-decoration: none;
 }
