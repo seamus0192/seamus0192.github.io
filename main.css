@@ -231,3 +231,20 @@ footer li img {
 .course-box:hover {
   text-decoration: none;
 }
+
+.btn-download {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-download:hover {
+  background-color: #999;
+  text-decoration: none;
+  color: #333;
+}
