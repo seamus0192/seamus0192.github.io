@@ -107,10 +107,29 @@ footer li img {
   height: 32px;
 }
 
+
+#profile {
+  border-radius: 20%;
+  filter: grayscale(25%);
+  display: inline-block;
+  width: 225px;
+  height: 250px;
+  margin-right: 15%;
+}
+
+#profile:hover {
+  filter:opacity(75%);
+  border: 10px;
+  border-color: black;
+}
+
 #about {
-  text-align: center;
   font-family: serif, 'Dedot';
   font-style: bold;
+  display: inline-block;
+  vertical-align: center;
+  font-size: 100px;
+  margin-right: 10%;
 }
 
 #about-txt {
@@ -126,46 +145,42 @@ footer li img {
   margin-bottom: 10px;
 }
 
-#profile {
-  border-radius: 20%;
-  filter: grayscale(25%);
-  display: block;
+#travel-title {
   margin-left: auto;
   margin-right: auto;
-  width: 180px;
-  height: 200px;
-}
-
-
-#profile:hover {
-  filter:opacity(75%);
-  border: 10px;
-  border-color: black;
+  text-align: center;
+  font-family: serif, 'Dedot';
+  font-style: bold;
 }
 
 #main-title {
-  font-size: 2rem; /* Increase the font size */
-  font-weight: bold; /* Make the text bold */
-  color: rgb(255, 255, 255); /* Change the text color */
+  font-size: 2rem;
+  font-weight: bold; 
+  color: rgb(255, 255, 255); 
   margin: 0; /* Remove any default margin */
 }
 
-#return {
-  text-decoration: none; /* Remove the underline */
-  color: #333; /* Change the link color */
+.return {
+  text-decoration: none; 
+  color: #333; 
   transition: color 0.3s ease; /* Add a smooth color transition */
 }
 
-#return:hover {
+.return:hover {
   color: rgb(167, 167, 167); /* Change the link color on hover */
+  text-decoration: none;
 }
 
 #proj {
   margin-top: 100px;
 }
 
-#proj-text {
+.proj-text {
   font-family: 'Times New Roman';
+}
+
+#map-container { 
+  padding-top:50px;
 }
 
 
@@ -217,12 +232,6 @@ footer li img {
   transform: translate(0px, -3px)
 }
 
-.separator {
-  height: 1px;
-  background-color: #000;
-  margin: 20px 0;
-}
-
 .course-box {
   font-family: "Times New Roman", Times, serif;
   text-decoration: none;
@@ -257,12 +266,30 @@ footer li img {
 
 .course-link:hover {
   text-decoration: none;
-  color:#655;
+  color:#644;
   text-shadow: #FFF;
 }
 
 #course-title {
   font-weight: bold;
+}
+
+.separator {
+  height: 1px;
+  background-color: #000;
+  margin: 20px 0;
+}
+
+.separator-1 {
+  text-align: center;
+}
+
+.separator-1::before,
+.separator-1::after {
+  content: "✧"; /* Unicode character for the dot */
+  font-size: 30px;
+  color: #333;
+  padding: 0 30px;
 }
 
 
@@ -278,20 +305,22 @@ footer li img {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  margin-left:20%;
+  min-width: 300px;
 }
 
 /* Language icon styling */
 .language-icon {
   width: 50px;
   height: 50px;
-  margin-left: 175px;
   border-radius: 50%;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
 }
 
 /* Language name styling */
 .language-name {
   margin-bottom: 15px;
+  margin-left: -30px;
   font-size: 24px;
   font-weight: 600;
   color: #333;
@@ -301,7 +330,7 @@ footer li img {
 .progress {
   height: 20px;
   margin-bottom: -10px;
-  margin-right: 100px;
+  margin-right: 15%;
   background-color:transparent;
   border-radius: 50px;
 }

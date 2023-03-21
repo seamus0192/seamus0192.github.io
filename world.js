@@ -18,7 +18,7 @@ function visitedCountries() {
     addCountryDesc(visitedCountries);
     if (!document.getElementById("hovertip")) { //so a new tip is not created if tip is already showing
         var tip = document.createElement("div");
-        tip.innerHTML = "(Hover over visited countries for brief descriptions!)";
+        tip.innerHTML = "(Hover over visited countries for brief descriptions. I have visited a total of " + Object.keys(visitedCountries).length + " countries so far!)";
         tip.setAttribute("style","text-align: center; padding-bottom: 15px; text-size: smaller;")
         tip.setAttribute("id", "hovertip")
         document.getElementById("travellog").appendChild(tip);
