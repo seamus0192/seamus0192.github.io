@@ -1,10 +1,5 @@
 window.onload = function (){
-    // create a list of countries I have visited
-    //visitedCountries()
-
-    //list of my top 5 countries I want to visit next
-    //futureTravel()
-    
+    // nothing currently... 
 }
 
 function visitedCountries() {
@@ -19,19 +14,25 @@ function visitedCountries() {
     "Japan":"Visited briefly Summer! Spent a day in Kyoto. Need to go back!", 
     "Costa Rica":"Visited Summer ! Stayed in San Jose and traveled throughout the west coast.", 
     "Puerto Rico":"Visited Winter 2019! Saw most of the island, spent most time in Old San Juan."}
-    colorMap(Object.keys(visitedCountries), "slateblue")
-    addCountryEventListeners(visitedCountries);
+    colorMap(Object.keys(visitedCountries), "slateblue");
+    addCountryDesc(visitedCountries);
+    if (!document.getElementById("hovertip")) { //so a new tip is not created if tip is already showing
+        var tip = document.createElement("div");
+        tip.innerHTML = "(Hover over visited countries for brief descriptions!)";
+        tip.setAttribute("style","text-align: center; padding-bottom: 15px; text-size: smaller;")
+        tip.setAttribute("id", "hovertip")
+        document.getElementById("travellog").appendChild(tip);
+    }
 }
 
 function futureTravel() {
-    var futureTravel = ["Ireland", "Brazil", "South Africa", "Dominican Republic", "South Korea"]
-    colorMap(futureTravel, "coral")
+    var futureTravel = ["Ireland", "Brazil", "South Africa", "Dominican Republic", "South Korea"];
+    colorMap(futureTravel, "firebrick");
 }
 
 function colorMap(places, color) {
     var c = document.getElementById("worldMap").contentDocument;
-    // iterate throughlist, filling
-    //some countries have multiple elements, such as JP below. Need to solve that.
+    // iterate throughlist, filling each element
     var countries = []
     places.forEach(place => countries.push(c.getElementsByClassName(place)));
     for (let i = 0; i < countries.length; i++){
@@ -39,6 +40,19 @@ function colorMap(places, color) {
         for (country of countries[i]) { 
             ///console.log(country)
             country.setAttribute("style", "fill: " + color + ";"); 
+        }
+    }
+}
+
+function addCountryDesc(visitedCountries) {
+    var c = document.getElementById("worldMap").contentDocument;
+    for (var countryName in visitedCountries) {
+        var countryInfo = visitedCountries[countryName];
+        var countries = c.querySelectorAll("." + countryName);
+        for (var i = 0; i < countries.length; i++) {
+            var country = countries[i];
+            country.setAttribute("title", countryInfo)
+            //console.log(country)
         }
     }
 }
@@ -70,43 +84,3 @@ function colorMap(places, color) {
 //         }
 //     }
 //   }
-
- 
-function addCountryEventListeners(visitedCountries) {
-    var c = document.getElementById("worldMap").contentDocument;
-    for (var countryName in visitedCountries) {
-        var countryInfo = visitedCountries[countryName];
-        var countries = c.querySelectorAll("." + countryName);
-        for (var i = 0; i < countries.length; i++) {
-            var country = countries[i];
-            addEventListener(country, countryInfo);
-        }
-    }
-
-    function addEventListener(country, countryInfo) {
-        country.addEventListener("mouseover", function(event) {
-            console.log("mouseover event triggered for " + countryInfo);
-            var tooltip = document.createElement("div");
-            tooltip.setAttribute("class", "visitdesc");
-            tooltip.innerHTML = countryInfo;
-            visitdesc.style.position = "absolute"
-            visitdesc.style.left = (event.clientX + 10) + "px";
-            visitdesc.style.top = (event.clientY + 10) + "px";
-            console.log(document.getElementById("map-container"))
-            console.log(tooltip)
-            document.getElementById("map-container").appendChild(tooltip);
-            console.log(document.getElementById("map-container"))
-        });
-        country.addEventListener("mousemove", function(event) {
-            var tooltip = document.getElementsByClassName("visitdescr")[0];
-            visitdesc.style.left = (event.clientX + 10) + "px";
-            visitdesc.style.top = (event.clientY + 10) + "px";
-        });
-        country.addEventListener("mouseout", function() {
-            var tooltip = document.querySelector(".tooltip");
-            if (tooltip) {
-                tooltip.parentNode.removeChild(tooltip);
-            }
-        });
-    }
-}
