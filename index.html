@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Seamus</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+  <header id='top-pg' class='container'>
+    <div class='row'>
+      <h1 id = "top-page" class='col-sm-4'>Seamus O'Malley</h1>
+        <nav  class='col-sm-8 text-right'>
+          <p><a class = "return" href = "work.html" role="button">Personal Projects</a></p>
+          <p><a class = "return" href = "school.html" role="button">Course Work and Skills</a></p>
+          <p><a class = "return" href = "contact.html" role="button">Contact Info</p>
+        </nav>
+    </div>
+  </header>
+
+  <section class='jumbotron'>
+    <div class='container'>
+      <div class='row text-center'>
+        <h2>Aspiring Software Engineer @ CalPoly SLO</h2>
+        <h3>Undergraduate Student</h3>
+        <a class='btn btn-primary' href='work.html' role='button'>My Work</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-9">
+          <h1 id='about'>My Name is Seamus O'Malley.</h1>
+        </div>
+        <div class="col-md-1">
+          <img id='profile' src='sources/IMG_4635.jpeg'>
+        </div>
+      </div>
+      <p id = 'about-txt'>I am a Computer Science Student from Cal Poly (SLO). <br><br><br>
+        First and foremost, I am a learner. No matter what the situation, my ability to learn and solve problems
+        presented to me is what I believe makes me stand out. When given a task, I solve it. I go above and beyond
+        and create results that exceed expectations and when given a chance at work, I quickly prove this. <br> <br>
+        My experience in Computer Science spans throughout the field, and I am ready to take it to the next level
+        with real work experience. My experience comes in the form of projects, some of which includes my work
+        on a fully functional game built in java, multiple algorithmic based projects in python, and web
+        development. I have a very strong foundational knowledge of key topics such as data structures,
+        object-oriented programing, and object-c/assembly. I feel the most comfortable with Java and Python,
+        but because of my fundamental knowledge of computer science, I believe that I can work in any development
+        language, given a small amount of time to get used to syntax. <br><br>
+        On top of that, by the end of this year, I plan on taking classes on system programming,
+        discrete structures, and data science. I am passionate and motivated to become the best
+        software engineer I can, and all I need is an opportunity to prove my talents. I am the
+        team member to work towards exceptionalism, not just someone who is fine with the statis quo. <br><br>
+        On a more personal level, some of the stuff I am super passionate about includes travel, music, sports, 
+        and connecting with people. I like to find the beauty in things and think that humor and loyalty are
+        some of my greatest strengths. I also really believe in the principle of balance, something which is
+        everchanging and something we should always be aware about.
+        Check out my computer science experience and projects at the top of the page, but I 
+        also coded together a couple simple javascript/ html programs to show off some of the stuff I love on this main page. 
+        Thank you for visiting my website!
+    </div>
+    <div class="separator-1"></div>
+  </section>
+
+
+
+  <section class="container" id = "map-container">
+    <div class="row" id = "travellog">
+      <h1 id="travel-title">My Travels</h1>
+      <p id = 'travels'> I am super passionate about travelling and seeing the world. Check out world map 
+        to explore some of my adventures!</p>
+      <a class="btn-download"  id="visited" onclick="visitedCountries()" href = "javascript:void(0);">Where I've Been</a>
+      <a id = "future" class = "btn-download" onclick="futureTravel()" href="javascript:void(0);">Where To Next?</a>
+      <object id = "worldMap" type="image/svg+xml" data="world.svg" style="padding-top:50px; margin-bottom: -500px;"></object>
+    </div>
+    <script src='./world.js'></script>
+  </section>
+
+  <footer class='container'>
+    <div class="separator"></div>
+    <div class='row'>s
+      <p class='col-sm-4'>Created by Seamus O'Malley</p>
+      <ul class='col-sm-8'>
+          <li class="col-sm-1">
+            <a class='btn social' href='https://www.linkedin.com/in/seamus-quinn-omalley/' role= 'button'>
+              <img src='sources/linkedin.png'>
+            </a>
+          </li>
+          <li class="col-sm-1">
+            <a class='btn social' href='https://github.com/seamus0192' role= 'button'>
+              <img src='sources/github.png'>
+            </a>
+          </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+  integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+
+</body>
+</html>
